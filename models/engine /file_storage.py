@@ -4,7 +4,7 @@ import json
 
 
 class FileStorage:
-    """This class manages storage of the models in JSON format"""
+    """This class manages storage of the models in JSON format. It serializes and deserializes JSON objects"""
     __file_path = 'file.json'
     __objects = {}
 
