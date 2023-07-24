@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+""" Amenity Module for airbnb project """
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
+    """Defines amenities that user can choose from to offer at their place"""
     name = ""

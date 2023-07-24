@@ -24,8 +24,8 @@ class BaseModel:
                 if key != '__class__':
                     setattr(self, key, value)    
         def __str__(self):
-        """returns class name, id and attribute dictionary
-        """
+            """returns class name, id and attribute dictionary
+            """
         class_name = "[" + self.__class__.__name__ + "]"
         dct = {k: v for (k, v) in self.__dict__.items() if (not v) is False}
         return class_name + " (" + self.id + ") " + str(dct)
